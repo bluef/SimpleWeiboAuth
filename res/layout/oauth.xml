@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.bluef.simpleweiboauth.layouts.OAuthLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/oauthLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:baselineAligned="false"
+	android:orientation="vertical"
+	android:background="#ffffff" >
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="45dp" >
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="帐号绑定"
+		    android:textSize="20sp" />
+
+		<Button
+		    android:id="@+id/btnCancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="8dp"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:text="返回" />
+
+	</RelativeLayout>
+
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_gravity="center" 
+		android:orientation="vertical" >
+	
+		<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/webView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		/>
+	</LinearLayout>
+</org.bluef.simpleweiboauth.layouts.OAuthLayout>
